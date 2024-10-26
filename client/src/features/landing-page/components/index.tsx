@@ -1,12 +1,14 @@
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { ArrowRight, DownloadIcon, PhoneCallIcon } from 'lucide-react';
+import { Helmet } from 'react-helmet';
 
 import { Link } from 'react-router-dom';
 
 export const LandingPage = () => {
   return (
     <>
+      <Helmet>Home</Helmet>
       <div className="relative h-5/6 w-full">
         <img className="h-full w-screen object-cover" src="/mahasiswa.jpeg" alt="" />
         <div className="absolute inset-0 bg-black opacity-60"></div>
@@ -35,7 +37,7 @@ export const LandingPage = () => {
           </div>
         </div>
         <div className="mt-10 w-full">
-          <div className="flex justify-between gap-5 px-4 text-center ">
+          <div className="flex justify-between gap-5 px-4 text-center">
             <Card className="w-1/2 rounded-md bg-slate-100 px-3 py-3">
               <h5>Apa Itu Pendidikan Tinggi Terbuka?</h5>
               <p>Terbuka maksudnya siapapun WNI yang telah lulus minimal SLTA/Sederajat dapat mengikuti kuliah di UT tanpa dibatasi usia, tahun kelulusan atau tahun ijazah, dan lama studi.</p>
@@ -65,13 +67,13 @@ export const LandingPage = () => {
                   <p>Tanggal Pendaftaran</p>
                 </Card>
                 <div>
-                  <div className="mt-2 flex justify-center gap-2 ">
-                    <Link to="/pendaftaran" className="w-1/2 ">
-                      <Button variant="primary" className="flex justify-center w-full">
+                  <div className="mt-2 flex justify-center gap-2">
+                    <Link to="/pendaftaran" className="w-1/2">
+                      <Button variant="primary" className="flex w-full justify-center">
                         Daftar Sekarang
                       </Button>
                     </Link>
-                    <Link to="https://www.ut.ac.id/program-studi/" className="w-1/2 ">
+                    <Link to="https://www.ut.ac.id/program-studi/" className="w-1/2">
                       <Button variant="primary" className="flex w-full justify-center">
                         Program Studi
                       </Button>
@@ -155,7 +157,7 @@ export const LandingPage = () => {
             </div>
           </div>
         </div>
-        <div className="mt-10 h-3/5">
+        <div className="mt-10 h-5/6">
           <div className="text-center">
             <h4>Frequently Asked Questions</h4>
           </div>
@@ -163,33 +165,49 @@ export const LandingPage = () => {
             <div className="w-4/5">
               <div className="collapse collapse-arrow">
                 <input type="radio" name="my-accordion-2" defaultChecked />
-                <div className="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                <div className="collapse-title text-lg font-medium">Apakah Program Studi UT Sudah Terakreditasi?</div>
                 <div className="collapse-content">
-                  <p>hello</p>
+                  <p>Ya, program studi Univesitas Terbuka sudah terakreditasi A dan B oleh BAN-PT. Untuk nilai akreditasi program studi di UT dapat dilihat di website UT dengan alamat www.ut.ac.id pada tautan Akreditasi BAN-PT.</p>
                 </div>
               </div>
               <hr />
               <div className="collapse collapse-arrow">
                 <input type="radio" name="my-accordion-2" />
-                <div className="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                <div className="collapse-title text-lg font-medium">Apakah Universitas Terbuka Termasuk Negeri atau Swasta?</div>
                 <div className="collapse-content">
-                  <p>hello</p>
+                  <p>UT adalah PT Negeri ke-45 di Indonesia.</p>
                 </div>
               </div>
               <hr />
               <div className="collapse collapse-arrow">
                 <input type="radio" name="my-accordion-2" />
-                <div className="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                <div className="collapse-title text-lg font-medium">Apa Bedanya Sistem Pembelajaran Di Universitas Terbuka Dengan Perguruan Tinggi Negeri?</div>
                 <div className="collapse-content">
-                  <p>hello</p>
+                  <p>Belajar di UT menggunakan sistem belajar mandiri tanpa mewajibkan datang ke kampus, sedangkan belajar di perguruan tinggi dilakukan dengan datang ke kampus atau tatap muka.</p>
                 </div>
               </div>
               <hr />
               <div className="collapse collapse-arrow">
                 <input type="radio" name="my-accordion-2" />
-                <div className="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                <div className="collapse-title text-lg font-medium">Berapa Uang Pendaftaran atau Uang Pangkal Kuliah di UT untuk Program Sarjana dan Diploma?</div>
                 <div className="collapse-content">
-                  <p>hello</p>
+                  <p>Di UT tidak ada uang pangkal/uang pendaftaran. Yang ada hanya biaya SPP per semester. Khusus untuk program S2 ada biaya admisi/tes masuk, selain SPP.</p>
+                </div>
+              </div>
+              <hr />
+              <div className="collapse collapse-arrow">
+                <input type="radio" name="my-accordion-2" />
+                <div className="collapse-title text-lg font-medium">Apakah Kegiatan Belajar Selama Kuliah di UT Hanya Dilakukan Secara Online?</div>
+                <div className="collapse-content">
+                  <p>Tidak. Banyak pilihan yang dapat diambil mahasiswa sesuai dengan kebutuhan dan keadaanya. Selain belajar secara online, di UT pun terdapat fasilitas belajar berupa bimbingan/tutorial tatap muka, praktik/praktikum, dan sebagainya.</p>
+                </div>
+              </div>
+              <hr />
+              <div className="collapse collapse-arrow">
+                <input type="radio" name="my-accordion-2" />
+                <div className="collapse-title text-lg font-medium">Apakah Ada Tes Masuk Untuk Kuliah di Universitas Terbuka?</div>
+                <div className="collapse-content">
+                  <p>Tidak ada tes masuk kecuali untuk Program S2.</p>
                 </div>
               </div>
               <hr />
@@ -198,11 +216,19 @@ export const LandingPage = () => {
         </div>
         <footer className="footer bg-slate-400 p-10 text-white">
           <nav>
-            <h6 className="footer-title">Services</h6>
-            <a className="link-hover link">Branding</a>
-            <a className="link-hover link">Design</a>
-            <a className="link-hover link">Marketing</a>
-            <a className="link-hover link">Advertisement</a>
+            <h6 className="footer-title">Fakultas Universitas Terbuka</h6>
+            <a href="https://feb.ut.ac.id/" target="_blank" rel="noopener noreferrer" className="link-hover link">
+              Fakultas Ekonomi dan Bisnis
+            </a>
+            <a href="https://fhisip.ut.ac.id/" className="link-hover link" target="_blank" rel="noopener noreferrer">
+              Fakultas Hukum, Ilmu Sosial dan Politik
+            </a>
+            <a href="https://fkip.ut.ac.id/" className="link-hover link" target="_blank" rel="noopener noreferrer">
+              Fakultas Keguruan dan Ilmu Pendidikan
+            </a>
+            <a href="https://fst.ut.ac.id/" className="link-hover link" target="_blank" rel="noopener noreferrer">
+              Fakultas Sains dan Teknologi
+            </a>
           </nav>
           <nav>
             <h6 className="footer-title">Company</h6>
@@ -211,39 +237,23 @@ export const LandingPage = () => {
             <a className="link-hover link">Jobs</a>
             <a className="link-hover link">Press kit</a>
           </nav>
-          <nav>
-            <h6 className="footer-title">Legal</h6>
-            <a className="link-hover link">Terms of use</a>
-            <a className="link-hover link">Privacy policy</a>
-            <a className="link-hover link">Cookie policy</a>
-          </nav>
         </footer>
-        <footer className="footer border-t border-base-300 bg-base-200 px-10 py-4 text-base-content">
+        <footer className="footer border-t border-base-300 bg-slate-400 px-10 py-4 text-white">
           <aside className="grid-flow-col items-center">
-            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd" className="fill-current">
-              <path d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"></path>
-            </svg>
+            <img src="/salut.png" height={100} width={100} alt="" />
             <p>
-              ACME Industries Ltd.
+              SALUT Priangan Mandiri Cipanas.
               <br />
-              Providing reliable tech since 1992
+              Komplek Ruko Tunas Kembang : Cipendawa, Kec. Pacet, Kabupaten Cianjur, Jawa Barat 43253.
             </p>
           </aside>
           <nav className="md:place-self-center md:justify-self-end">
             <div className="grid grid-flow-col gap-4">
-              <a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="fill-current">
-                  <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
-                </svg>
-              </a>
-              <a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="fill-current">
-                  <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
-                </svg>
-              </a>
-              <a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="fill-current">
-                  <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+              <a href="https://www.instagram.com/salutpmc/ " target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-instagram">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
                 </svg>
               </a>
             </div>
