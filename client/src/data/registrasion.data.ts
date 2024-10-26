@@ -1,0 +1,46 @@
+export const JenisKelamin = [
+    { value: 'Laki-Laki', label: 'Laki-Laki' },
+    { value: 'Laki-Laki', label: 'Perempuan' },
+  ];
+
+  export const GrupWa = [
+    { value: 'Sudah', label: 'Sudah' },
+    { value: 'Belum', label: 'Belum' },
+  ];
+
+export const ProgramStudi = [
+    { value: 'Sains Data', label: 'Sains Data' },
+    { value: 'Teknologi Pendidikan', label: 'Teknologi Pendidikan' },
+    { value: 'Pendidikan Guru Sekolah Dasar (PGSD)', label: 'Pendidikan Guru Sekolah Dasar (PGSD)' },
+    { value: 'Pendidikan Guru Pendidikan Anak Usia Dini (PGPAUD)', label: 'Pendidikan Guru Pendidikan Anak Usia Dini (PGPAUD)' },
+    { value: 'Pendidikan Agama Islam (PAI)', label: 'Pendidikan Agama Islam (PAI)' },
+    { value: 'Pendidikan Bahasa dan Sastra Indonesia', label: 'Pendidikan Bahasa dan Sastra Indonesia' },
+    { value: 'Pendidikan Bahasa Inggris', label: 'Pendidikan Bahasa Inggris' },
+    { value: 'Pendidikan Biologi', label: 'Pendidikan Biologi' },
+    { value: 'Pendidikan Fisika', label: 'Pendidikan Fisika' },
+    { value: 'Pendidikan Kimia', label: 'Pendidikan Kimia' },
+    { value: 'Pendidikan Matematika', label: 'Pendidikan Matematika' },
+    { value: 'Pendidikan Ekonomi', label: 'Pendidikan Ekonomi' },
+    { value: 'Pendidikan Pancasila dan Kewarganegaraan', label: 'Pendidikan Pancasila dan Kewarganegaraan' },
+    { value: 'Program Pendidikan Profesi Guru (PPG)', label: 'Program Pendidikan Profesi Guru (PPG)' },
+    { value: 'Bimbingan Konseling', label: 'Bimbingan Konseling' },
+    { value: 'Statistika', label: 'Statistika' },
+    { value: 'Matematika', label: 'Matematika' },
+    { value: 'Biologi', label: 'Biologi' },
+    { value: 'Teknologi Pangan', label: 'Teknologi Pangan' },
+    { value: 'Agribisnis', label: 'Agribisnis' },
+    { value: 'Perencanaan Wilayah dan Kota', label: 'Perencanaan Wilayah dan Kota' },
+    { value: 'Sistem Informasi', label: 'Sistem Informasi' },
+    { value: 'Ilmu Administrasi Negara', label: 'Ilmu Administrasi Negara' },
+    { value: 'Ilmu Administrasi Bisnis', label: 'Ilmu Administrasi Bisnis' },
+    { value: 'Ilmu Hukum', label: 'Ilmu Pemerintahan' },
+    { value: 'Ilmu Komunikasi', label: 'Ilmu Komunikasi' },
+    { value: 'Ilmu Perpustakaan', label: 'Ilmu Perpustakaan' },
+    { value: 'Sosiologi', label: 'Sosiologi' },
+    { value: 'Sastra Inggris Bidang Minat Penerjemah', label: 'Sastra Inggris Bidang Minat Penerjemah' },
+    { value: 'Manajemen', label: 'Manajemen' },
+    { value: 'Akuntansi', label: 'Akuntansi' },
+    { value: 'Akutansi Keuangan Publik', label: 'Akutansi Keuangan Publik' },
+    { value: 'Ekonomi Syariah', label: 'Ekonomi Syariah' },
+    { value: 'Pariwisata', label: 'Pariwisata' },
+  ];

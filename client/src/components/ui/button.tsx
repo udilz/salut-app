@@ -9,6 +9,7 @@ const buttonStyle = tv({
       primary: 'text-white border-primary-500 bg-primary-500 hover:bg-primary-400 active:bg-primary-600',
       secondary: 'bg-secondary-50/50 border-secondary-50/50 text-black hover:bg-secondary-200 active:bg-secondary-300',
       outline: ' text-slate-700 hover:border-slate-500 shadow-sm',
+      black: 'text-white border-slate-700 bg-slate-700 hover:bg-slate-600 active:bg-slate-700',
     },
     size: {
       small: 'text-xs px-2 py-1 rounded-md',
